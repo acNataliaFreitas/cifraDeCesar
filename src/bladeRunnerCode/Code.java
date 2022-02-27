@@ -15,6 +15,7 @@ public class Code {
 		char [] alfabeto = {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
 				'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y','z' };
 		
+		//leitura de entrada + verificacao com alfabeto
 		for(int i = 0; i < cCodigo.length; i++) {
 			for( int j = 0; j < alfabeto.length; j++) {
 				if(cCodigo[i] == alfabeto[j]) {
@@ -22,6 +23,8 @@ public class Code {
 				}
 			}
 		}
+		
+		// leitura do for anterior somando com a senha
 		for(int i = 0; i < iEntrada.length; i++) {
 			for (int j = 0; j < 5; j++) {
 				iEntrada[i] += senha[j];
@@ -29,6 +32,7 @@ public class Code {
 			}
 		}
 		
+		// leitura de saida
 		for(int i =0; i < iEntrada.length; i++) {
 			saida+= alfabeto[iEntrada[i]];
 		}

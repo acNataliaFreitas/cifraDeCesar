@@ -16,7 +16,7 @@ public class cifra {
 			char[] s = str.toCharArray();
 			
 			
-			//teste para letras minúsculas
+			/* Teste para letras minúsculas */
 			for (int x=0 ; x<s.length ; x++){
 				if(s[x]>=94 && s[x]<=122){
 					if((s[x]+troca) > 122)
